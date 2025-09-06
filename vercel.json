@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "buildCommand": "pnpm run vercel-build",
   "outputDirectory": "dist/spa",
   "routes": [
@@ -11,13 +10,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
